@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sparkle - Voiceover & Broadcasting Portfolio</title>
+  <title>Sparkle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAVIGATION -->
+ <header>
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">
@@ -24,9 +26,8 @@
   </nav>
 
   <!-- HERO / INTRO -->
-   <header>
   <section class="hero-section">
-    <img src="4.jpg" alt="">
+    <img src="sparklegrad1.jpg" alt="">
     <h1>Hi, I'm Sparkle</h1>
     <p>Voice‑over Artist • Broadcaster • Storyteller</p>
   </section>
@@ -38,7 +39,7 @@
 
       <!-- Video -->
       <div class="about-video">
-        <video controls poster="sparklegrad1.jpg">
+        <video controls poster="sparklegrad2.jpg">
           <source src="aboutme.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -116,7 +117,14 @@
                 <p></p>
                 <a href="podcast.html">Explore...</a>
             </div>
-        </div>
+                <div>
+                    <i class="fa-solid fa-voicemail"></i>
+                <h3>VOICE OVER</h3>
+                <p></p>
+                <a href="voiceover.html">Listen...</a>
+            </div>
+        
+          </div>
 
 
         </div>
@@ -126,11 +134,15 @@
   <section id="contact" class="contact-section">
     <div class="container">
       <h2>Contact Me</h2>
-
-      <form id="contactForm">
+      <i class="fa-brands fa-x-twitter"></i>
+        <p>Oyinkansolajegede5@gmail.com</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-x-twitter"></i>
+                <div>
+                    <form id="contactForm">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <textarea name="message" placeholder="Your Message" required rows="4"></textarea>
         <button type="submit">Send Message</button>
       </form>
       

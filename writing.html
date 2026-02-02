@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sparkle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="writings.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+ <header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <h2>SPARKLE</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience-skills">Experience</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO / INTRO -->
+  <section class="hero-section">
+    <img src="4.jpg" alt="">
+    <h1>Hi, I'm Sparkle</h1>
+    <p>Voice‑over Artist • Broadcaster • Storyteller</p>
+  </section>
+   </header>
+<!-- WRITINGS PAGE WRAPPER -->
+<div class="writing-page">
+
+  <!-- Preview Page -->
+  <div class="contain" id="preview-page">
+    <h1>Writings</h1>
+
+    <div class="story-preview fade" onclick="showStory(0)">
+      <div class="story-title">OSIMIRI FOR TALES AND WHISPERS</div>
+      <div class="story-text">
+        If someone had told me that a day would come where I would be trending on Instablog for fighting a yellow bus conductor on third mainland bridge, I would have called them insane but unfortunately, my phone was still ringing, I’m sure my mum must have…
+      <br>
+      <small><em>April 22, 2025 | Article at Sparkle</em></small>
+      </div>
+      <div class="click-hint">(Click to read)</div>
+    </div>
+
+    <div class="story-preview fade" onclick="showStory(1)">
+      <div class="story-title">TAKE A SIP OF PEACE</div>
+      <div class="story-text">
+        It’s so weird how the smallest thing can happen and it would set you back ten paces… all that work come crashing down.
+      </div>
+      <div class="click-hint">(Click to read)</div>
+    </div>
+  </div>
+
+  <!-- Full Story Page -->
+  <div class="contain full-story fade" id="full-story">
+    <div id="story-title"></div>
+    <div id="story-text"></div>
+    <div class="back" onclick="showPreview()">← Back to Writings</div>
+  </div>
+
+</div>
+
+<script>
+const stories = [
+  {
+    title: "OSIMIRI FOR TALES AND WHISPERS",
+    text: `
+If someone had told me that a day would come where I would be trending on Instablog for fighting a yellow bus conductor on third mainland bridge, I would have called them insane but unfortunately, my phone was still ringing, I’m sure my mum must have called 50 times by now, only God knows how she heard, I thought she doesn’t even use Instagram, oh wait, Jesus that means my matter has even reached Facebook, I could feel the messages pouring in from all over and all I could think about was Akin and what he would think when he sees it.
+
+I stood up and walked to the mirror in my apartment, I no longer recognized myself, this wasn’t the plan, I followed all the YouTube tutorials diligently, some said use turmeric and honey, I did just that, some even said take a bath with oats and milk, I did that too, every morning and night I applied all the products that I spent most of my salary on but still, nothing changed...`
+  },
+  {
+    title: "TAKE A SIP OF PEACE",
+    text: `
+It’s so weird how the smallest thing can happen and it would set you back ten paces, I mean you’ve stayed up all night building blocks of confidence, watching self-esteem videos, curating the perfect playlist for days when you get down and then all of a sudden the tiniest comment from somebody who you shouldn’t even take serious comes along and then it’s like all of that work come crashing down.
+
+So now, you begin an internal dilemma “Was I ever who I thought I was?”, “Who exactly am I?” “Who have I been?” And you begin to try to decipher whether what the world sees has just been a façade...`
+  }
+];
+
+function fadeIn(element) {
+  element.style.opacity = 0;
+  element.style.display = "block";
+  let op = 0;
+  const timer = setInterval(() => {
+    if (op >= 1) clearInterval(timer);
+    element.style.opacity = op;
+    op += 0.05;
+  }, 20);
+}
+
+function showStory(index) {
+  document.getElementById("preview-page").style.display = "none";
+  const fullStory = document.getElementById("full-story");
+  document.getElementById("story-title").innerText = stories[index].title;
+  document.getElementById("story-text").innerText = stories[index].text;
+  fadeIn(fullStory);
+}
+
+function showPreview() {
+  const fullStory = document.getElementById("full-story");
+  fullStory.style.display = "none";
+  fadeIn(document.getElementById("preview-page"));
+}
+</script>
+
+</body>
+</html>
