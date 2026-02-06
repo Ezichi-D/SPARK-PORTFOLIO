@@ -3,49 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sparkle</title>
+  <title>Sparkle Portfolio</title>
+
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/682ec754b8.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <!-- NAVIGATION -->
- <header>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <a href="index.html"><h2>SPARKLE</h2></a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience-skills">Experience</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html"><h2>SPARKLE</h2></a>
+        </div>
 
-  <!-- HERO / INTRO -->
-  <section class="hero-section">
-    <img src="sparklegrad1.jpg" alt="">
-    <h1>Hi, I'm Sparkle</h1>
-    <p>Voice‑over Artist • Broadcaster • Storyteller</p>
-  </section>
-   </header>
+        <ul id="sidemenu" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience-skills">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+          <!-- Close icon -->
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+
+        <!-- Hamburger icon -->
+        <i class="fa-solid fa-bars open"  onclick="openmenu()"></i>
+      </div>
+    </nav>
+
+    <!-- HERO / INTRO -->
+    <section class="hero-section" id="home">
+      <img src="sparklegrad1.jpg" alt="Sparkle">
+      <h1>Hi, I'm Sparkle</h1>
+      <p>Voice‑over Artist • Broadcaster • Storyteller</p>
+    </section>
+  </header>
 
   <!-- ABOUT ME -->
   <section id="about" class="about-me-section">
     <div class="about-container">
 
-      <!-- Video -->
       <div class="about-video">
         <video controls poster="sparklegrad1.jpg">
-          <source src="aboutme.mp4" type="video/mp4" />
+          <source src="aboutme.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
         </video>
       </div>
 
-      <!-- Text -->
       <div class="about-text">
         <h2>About Me</h2>
         <p>
@@ -55,7 +65,7 @@
           I also run the <strong>“What’s Trending” podcast</strong>, where I explore pop culture, social topics, and stories that matter. Being a <strong>law graduate</strong> has also helped shape how I speak, think, and express ideas — with clarity and confidence.<br><br>
           This site is a snapshot of that journey so far — explore my work below!
         </p>
-        <a href="#projects" class="btn-primary">See My Work ↓</a>
+        <a href="#portfolio" class="btn-primary">See My Work ↓</a>
       </div>
 
     </div>
@@ -66,7 +76,6 @@
     <div class="container">
       <h2>Experience & Skills</h2>
 
-      <!-- EXPERIENCE -->
       <div class="experience-list">
         <div class="experience-item">
           <h3>Crowther 88.5FM — Show Presenter</h3>
@@ -84,7 +93,6 @@
         </div>
       </div>
 
-      <!-- SKILLS LIST -->
       <div class="skills-list">
         <h3>Key Skills</h3>
         <ul>
@@ -100,52 +108,53 @@
     </div>
   </section>
 
-  <!-- ..........Portfolio.........         -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <h2 class="sub-title">My Portfolio</h2>
-        <div class="lead">
-            <div>
-                <i class="fa-brands fa-readme"></i>
-                <h3>WRITING</h3>
-                <p>
-                <a href="writing.html">Read...</a></p>
-            </div>
-                <div>
-                    <i class="fa-solid fa-podcast"></i>
-                <h3>PODCAST</h3>
-                <p>
-                <a href="podcast.html">Explore...</a></p>
-            </div>
-                <div>
-                    <i class="fa-solid fa-voicemail"></i>
-                <h3>VOICE OVER</h3>
-                <p>
-                <a href="voiceover.html">Listen...</a></p>
-            </div>
-        
-          </div>
-
-
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <h2 class="sub-title">My Portfolio</h2>
+      <div class="lead">
+        <div>
+            <a href="writing.html">
+          <i class="fa-brands fa-readme"></i>
+          <h3>WRITING</h3>
+          <p>Read...</p>
+            </a>
         </div>
-    </section>
+        <div>
+            <a href="podcast.html">
+          <i class="fa-solid fa-podcast"></i>
+          <h3>PODCAST</h3>
+          <p>Explore...</p>
+            </a>
+        </div>
+        <div>
+            <a href="voiceover.html">
+          <i class="fa-solid fa-voicemail"></i>
+          <h3>VOICE OVER</h3>
+          <p>Listen...</p>
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- CONTACT FORM -->
+  <!-- CONTACT -->
   <section id="contact" class="contact-section">
     <div class="container">
       <h2>Contact Me</h2>
-        <p>Oyinkansolajegede5@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://x.com/sparklesmoments?s=11"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/sparkletotheworld?igsh=YWx6ZmgzaDViNWNy"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                    <form id="contactForm">
+      <p>Oyinkansolajegede5@gmail.com</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <form id="contactForm">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required rows="4"></textarea>
         <button type="submit">Send Message</button>
       </form>
-      
+
       <p id="status"></p>
     </div>
   </section>
@@ -180,6 +189,18 @@
         status.innerText = "Error — try again later.";
       });
     });
+  </script>
+  <script>
+    const sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+  sidemenu.style.right = "0";
+}
+
+function closemenu() {
+  sidemenu.style.right = "-100%";
+}
+
   </script>
 
 </body>

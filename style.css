@@ -1,8 +1,7 @@
 /* GLOBAL */
-header{
-   background: url(purple\ spark.png) center/cover no-repeat;
+header {
+  background: url(purple\ spark.png) center/cover no-repeat;
 }
-
 
 body {
   margin: 0;
@@ -11,22 +10,20 @@ body {
   line-height: 1.6;
 }
 
-
-.logo a{
-   text-decoration: none;
-   font-size:   20px;
-   margin-top: -20px;
-   margin-right: 15px;
-   color: purple;
-   display: inline-block;
-   transition: transform 0.5s;
+.logo a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: -50px;
+  margin-left: -15px;
+  color: purple;
+  display: inline-block;
+  transition: transform 0.5s;
 }
 
-.logo a:hover{
-   color: violet;
-   transform: translateY(-5px);
+.logo a:hover {
+  color: violet;
+  transform: translateY(-5px);
 }
-
 
 a {
   text-decoration: none;
@@ -51,14 +48,19 @@ a {
   gap: 25px;
 }
 
+.open {
+  margin-top: -40px;
+  margin-right: -20px;
+}
+
 .nav-links li a {
   color: unset;
   font-weight: 600;
 }
+
 .nav-links li a:hover {
   color: violet;
   transform: translateY(-5px);
-
 }
 
 /* HERO */
@@ -69,7 +71,6 @@ a {
   overflow: hidden;
 }
 
-/* Fade overlay */
 .hero-section::after {
   content: "";
   position: absolute;
@@ -88,10 +89,7 @@ a {
   width: 250px;
   border-radius: 150px;
   padding: -100px;
-
 }
-
-
 
 .hero-section h1 {
   font-size: 36px;
@@ -103,22 +101,12 @@ a {
   color: #444;
 }
 
-
 /* ABOUT */
 .about-me-section {
   padding: 60px 20px;
   display: flex;
   justify-content: center;
-}
-
-.about-me-section {
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-  background: #f7f6fb
-
-
-; /* soft neutral fade target */
+  background: #f7f6fb;
 }
 
 .about-container {
@@ -214,77 +202,91 @@ a {
   color: purple;
 }
 
-
-/*.........Portfolio..........*/
-#portfolio{
-   padding: 30px 0;
-   margin-left: 30px;
-}
-.lead{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   grid-gap: 50px;
-   margin-top: 50px;
-   margin-right: 50px;
-}
-.lead div{
-   background: #262626;
-   padding: 40px;
-   font-size: 25px;
-   font-weight: 1000;
-   border-radius: 10px;
-   transition: background 0.5s, transform 0.5s;
-}
-.lead div i{
-   margin-bottom: 30px;
-   font-size: 50px;
-
-}
-.lead div h3{
-   font-size: 30px;
-   font-weight: 500;
-   margin-bottom: 15px;
-}
-.lead div a{
-   text-decoration: none;
-   color: #fff;
-   font-size: 12px;
-   margin-top: 20px;
-   display: inline-block;
-
-}
-.lead div:hover{
-   background: violet;
-   transform: translateY(-10px);
+/* PORTFOLIO */
+#portfolio {
+  padding: 30px 0;
+  margin-left: 30px;
 }
 
-#podcast{
-   display: flex;
-   padding: 30px 0;
-   margin-left: 30px;
+.lead {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
 }
 
-/* Make date + link sit inline and vertically centered */
+.lead div {
+  background: #262626;
+  padding: 40px;
+  font-size: 25px;
+  font-weight: 1000;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.lead div i {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.lead div h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.lead div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.lead div:hover {
+  background: violet;
+  transform: translateY(-10px);
+}
+
+#podcast {
+  display: flex;
+  padding: 30px 0;
+  margin-left: 30px;
+}
+
 #podcast .align div p a,
-#podcast .align div p a i{
-   display: inline-block;
-   vertical-align: middle;
+#podcast .align div p a i {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-#podcast .align div p a{
-   color: purple;
-   font-size: 15px;
-   margin-left: 8px;
-   text-decoration: none;
+#podcast .align div p a {
+  color: purple;
+  font-size: 15px;
+  margin-left: 8px;
+  text-decoration: none;
 }
 
-#podcast .align div p small{
-   vertical-align: middle;
+#podcast .align div p small {
+  vertical-align: middle;
 }
 
-@media (max-width: 900px){
-   .portfolio-table{ min-width: 700px; }
+.portfolio-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
+
+.portfolio-link div {
+  transition: background 0.5s, transform 0.5s;
+}
+
+.portfolio-link:hover div {
+  background: violet;
+  transform: translateY(-10px);
+}
+
 
 /* CONTACT */
 .contact-section {
@@ -301,21 +303,22 @@ a {
   margin: auto;
 }
 
-social-icons{
-   margin-top: 30px;
-}
-.social-icons a{
-   text-decoration: none;
-   font-size: 30px;
-   margin-right: 15px;
-   color: purple;
-   display: inline-block;
-   transition: transform 0.5s;
+.social-icons {
+  margin-top: 30px;
 }
 
-.social-icons a:hover{
-   color: violet;
-   transform: translateY(-5px);
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: purple;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: violet;
+  transform: translateY(-5px);
 }
 
 .contact-section input,
@@ -324,7 +327,6 @@ social-icons{
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 15px;
-
 }
 
 .contact-section button {
@@ -341,9 +343,14 @@ social-icons{
   background: violet;
 }
 
+.navbar .fa-solid{
+  display: none;
+}
 
-/* RESPONSIVE */
+/* RESPONSIVE + MOBILE MENU */
 @media (max-width: 900px) {
+
+  /* About container stack */
   .about-container {
     flex-direction: column;
     text-align: center;
@@ -354,8 +361,43 @@ social-icons{
     align-items: center;
   }
 
+  /* Nav links stacked for mobile */
   .nav-links {
     flex-direction: column;
     gap: 15px;
+  }
+
+  /* Hamburger icon display */
+  .navbar .fa-solid {
+    display: block;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  /* Side menu */
+  #sidemenu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* hidden offscreen */
+    width: 100px;
+    height: 100vh;
+    background: violet;
+    padding-top: 60px;
+    z-index: 10;
+    transition: right 0.3s ease;
+  }
+
+  /* Menu items spacing */
+  #sidemenu li {
+    margin: 10px;
+  }
+
+  /* Close (X) icon */
+  #sidemenu .fa-xmark {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 22px;
+    cursor: pointer;
   }
 }
