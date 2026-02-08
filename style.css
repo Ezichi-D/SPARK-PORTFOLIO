@@ -255,6 +255,12 @@ a {
   margin-left: 30px;
 }
 
+.container h1{
+  padding: 20px 500px; 
+    text-align: center;
+    margin-top: -10px;
+  }
+
 #podcast .align div p a,
 #podcast .align div p a i {
   display: inline-block;
@@ -291,6 +297,12 @@ a {
 /* PROJECTS */
 .projects-section {
   padding: 60px 20px;
+  text-align: center;
+}
+.projects-section h2 {
+  margin-top: -50px;
+  text-align: center;
+  font-size: 35px;
 }
 
 .project-cards {
@@ -304,7 +316,7 @@ a {
   background: violet;
   padding: 20px;
   border-radius: 8px;
-  max-width: 380px;
+  max-width: 330px;
   text-align: center;
   border: 5px;
   border-radius: 10px;
@@ -401,6 +413,12 @@ a {
     text-align: center;
   }
 
+  .container h1{
+    padding: 0 20px;
+    text-align: center;
+    margin-top: -10px;
+  }
+
   .project-cards {
     flex-direction: column;
     align-items: center;
@@ -461,6 +479,17 @@ a {
     font-size: 16px; /* better mobile typing */
   }
 
+  .full-story {
+    text-align: left;    /* align text to the left */  /* add some padding so it’s not glued to edges */
+  }
 
+  .full-story .contain {
+    width: 100%;       /* take full width */
+    max-width: 100%;   /* remove max-width limit */
+    margin: 0;         /* remove centering */
+    padding: 20px;     /* optional padding */
+  }
+
+  
 }
 
